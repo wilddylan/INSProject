@@ -1,0 +1,36 @@
+{
+	"liveValues": [
+		{
+			"range": {
+				"from": {
+					"line": 34,
+					"ch": 16
+				},
+				"to": {
+					"line": 34,
+					"ch": 24
+				}
+			},
+			"editWith": "dropdown",
+			"dropdownOptions": "AlignItems",
+			"type": "string",
+			"name": "AlignItems"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 35,
+					"ch": 20
+				},
+				"to": {
+					"line": 35,
+					"ch": 35
+				}
+			},
+			"editWith": "dropdown",
+			"dropdownOptions": "JustifyContent",
+			"type": "string",
+			"name": "JustifyContent"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"liveValues": [
+		{
+			"range": {
+				"from": {
+					"line": 21,
+					"ch": 22
+				},
+				"to": {
+					"line": 21,
+					"ch": 26
+				}
+			},
+			"type": "boolean",
+			"name": "Horizontal",
+			"group": "SCROLL VIEW"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 62,
+					"ch": 21
+				},
+				"to": {
+					"line": 62,
+					"ch": 30
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "BackgroundColor"
+		}
+	]
+}
