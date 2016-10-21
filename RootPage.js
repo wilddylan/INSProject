@@ -1,6 +1,6 @@
 import React, { Component, } from 'react';
 import { View, Text, StyleSheet, TabBarIOS } from 'react-native';
-import { Router, Scene, Actions, ActionConst } from 'react-native-router-flux';
+
 import NewsPage from './News/NewsPage';
 import AccountPage from './Account/AccountPage';
 
@@ -9,7 +9,7 @@ class RootPage extends Component {
     super(props);
     this.state = { selectedTab: "newsTab" };
   }
-
+  
   render() {
     return (
       <TabBarIOS
