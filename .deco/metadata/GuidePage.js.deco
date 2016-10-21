@@ -3,11 +3,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 21,
+					"line": 28,
 					"ch": 22
 				},
 				"to": {
-					"line": 21,
+					"line": 28,
 					"ch": 26
 				}
 			},
@@ -18,12 +18,29 @@
 		{
 			"range": {
 				"from": {
-					"line": 62,
+					"line": 40,
+					"ch": 60
+				},
+				"to": {
+					"line": 40,
+					"ch": 62
+				}
+			},
+			"type": "number",
+			"name": "ActiveOpacity",
+			"min": 0,
+			"max": 100,
+			"group": "TOUCHABLE OPACITY"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 57,
 					"ch": 21
 				},
 				"to": {
-					"line": 62,
-					"ch": 30
+					"line": 57,
+					"ch": 28
 				}
 			},
 			"editWith": "colorPicker",

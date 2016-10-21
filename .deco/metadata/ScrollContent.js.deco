@@ -3,28 +3,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 33,
-					"ch": 62
-				},
-				"to": {
-					"line": 33,
-					"ch": 64
-				}
-			},
-			"type": "number",
-			"name": "ActiveOpacity",
-			"min": 0,
-			"max": 100,
-			"group": "TOUCHABLE OPACITY"
-		},
-		{
-			"range": {
-				"from": {
-					"line": 51,
+					"line": 37,
 					"ch": 16
 				},
 				"to": {
-					"line": 51,
+					"line": 37,
 					"ch": 24
 				}
 			},
@@ -36,11 +19,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 52,
+					"line": 38,
 					"ch": 20
 				},
 				"to": {
-					"line": 52,
+					"line": 38,
 					"ch": 28
 				}
 			},
@@ -52,11 +35,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 64,
+					"line": 50,
 					"ch": 16
 				},
 				"to": {
-					"line": 64,
+					"line": 50,
 					"ch": 21
 				}
 			},
@@ -68,11 +51,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 70,
+					"line": 56,
 					"ch": 16
 				},
 				"to": {
-					"line": 70,
+					"line": 56,
 					"ch": 21
 				}
 			},
@@ -84,11 +67,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 76,
+					"line": 62,
 					"ch": 16
 				},
 				"to": {
-					"line": 76,
+					"line": 62,
 					"ch": 21
 				}
 			},
@@ -96,52 +79,6 @@
 			"dropdownOptions": "FontWeight",
 			"type": "string",
 			"name": "FontWeight"
-		},
-		{
-			"range": {
-				"from": {
-					"line": 83,
-					"ch": 16
-				},
-				"to": {
-					"line": 83,
-					"ch": 24
-				}
-			},
-			"editWith": "dropdown",
-			"dropdownOptions": "AlignItems",
-			"type": "string",
-			"name": "AlignItems"
-		},
-		{
-			"range": {
-				"from": {
-					"line": 84,
-					"ch": 20
-				},
-				"to": {
-					"line": 84,
-					"ch": 28
-				}
-			},
-			"editWith": "dropdown",
-			"dropdownOptions": "JustifyContent",
-			"type": "string",
-			"name": "JustifyContent"
-		},
-		{
-			"range": {
-				"from": {
-					"line": 92,
-					"ch": 17
-				},
-				"to": {
-					"line": 92,
-					"ch": 18
-				}
-			},
-			"type": "number",
-			"name": "BorderWidth"
 		}
 	]
 }

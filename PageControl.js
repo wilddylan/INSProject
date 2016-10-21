@@ -1,8 +1,7 @@
 import React, { Component, } from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet, Dimensions } from 'react-native'
 
 class PageControl extends Component {
-
   static propTypes = {}
   static defaultProps = {}
 
@@ -11,17 +10,26 @@ class PageControl extends Component {
     this.state = {}
   }
   render() {
-    var number = this.props.number;
-    var index = this.props.index;
+    let number = this.props.number;
+    let index = this.props.index;
     var items = new Array();
+    
+    let screenWidth = Dimensions.get('window').width;
+    
+    let containerPosition = {
+      width: number * 20,
+      position: 'absolute',
+      left: (screenWidth - number * 20) / 2.0,
+      top: this.props.top
+    };
     for (var i=0; i<number; i++) {
-      var item = (
-        <View style={i == index ? styles.itemHighLight : styles.item} key={i} ></View>
+      let item = (
+        <View style={[(i == index ? styles.itemHighLight : styles.item), styles.itemSize]} key={i} ></View>
       );
       items.push(item);
     }
     return (
-      <View style={styles.container}>
+      <View style={[styles.container, containerPosition]}>
         {items}
       </View>
     )
@@ -37,18 +45,17 @@ const styles = StyleSheet.create({
     width: 50,
     marginTop: 40
   },
-  item: {
+  itemSize: {
     width: 10,
     height: 10,
     borderRadius: 5,
+  },
+  item: {
     backgroundColor: 'white',
     borderColor: '#34a3ff',
     borderWidth: 1
   },
   itemHighLight: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
     backgroundColor: 'skyblue'
   }
 });
