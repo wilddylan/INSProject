@@ -1,5 +1,5 @@
 import React, { Component, } from 'react';
-import { View, Text, StyleSheet, TabBarIOS } from 'react-native';
+import { TabBarIOS } from 'react-native';
 
 import NewsPage from './News/NewsPage';
 import AccountPage from './Account/AccountPage';

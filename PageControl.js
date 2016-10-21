@@ -2,9 +2,6 @@ import React, { Component, } from 'react'
 import { View, StyleSheet, Dimensions } from 'react-native'
 
 class PageControl extends Component {
-  static propTypes = {}
-  static defaultProps = {}
-
   constructor(props) {
     super(props)
     this.state = {}

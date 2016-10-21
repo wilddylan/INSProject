@@ -46,7 +46,7 @@ class GuidePage extends Component {
           showsHorizontalScrollIndicator={false}  
           alwaysBounceHorizontal={true}  
           pagingEnabled={true}  
-          onScroll={(event: Object) => {
+          onScroll={(event) => {
             let caluIndex = parseInt(event.nativeEvent.contentOffset.x / screenWidth);
             this.setState({ currentIndex: caluIndex });
           }} 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, View} from 'react-native';
+import { AppRegistry } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux';
 import GuidePage from './GuidePage';
 import RootPage from './RootPage';
