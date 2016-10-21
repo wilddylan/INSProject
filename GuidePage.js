@@ -1,5 +1,6 @@
 import React, { Component, } from 'react'
 import { View, ScrollView, TouchableOpacity, Dimensions, Text, StyleSheet } from 'react-native'
+import { Actions, ActionConst } from 'react-native-router-flux';
 import ScrollContent from './ScrollContent';
 import PageControl from './PageControl';
 
@@ -10,13 +11,28 @@ class GuidePage extends Component {
   }
 
   render() {
+    let objects = [
+      {
+        uri: "http://ocef2grmj.bkt.clouddn.com/Group.png",
+        title: "Shopping directly",
+        detail: "Know your factories. Know your costs.",
+        subDetail: "Always ask why."
+      },
+      {
+        uri: "http://ocef2grmj.bkt.clouddn.com/Clothes-illustration.png",
+        title: "Hello world!",
+        detail: "Know your factories. Know your costs.",
+        subDetail: "Always ask why.",
+      }
+    ];
+
     let screenWidth = Dimensions.get('window').width;
     let pageControlTop = screenWidth / 2.0 + 300;
-    let objectNum = this.props.objects.length;
+    let objectNum = objects.length;
     
     var scrollItems = new Array();
     for (var i=0; i<objectNum; i++) {
-      let obj = this.props.objects[i];
+      let obj = objects[i];
       let item = (
         <ScrollContent uri={obj.uri} title={obj.title} detail={obj.detail} subDetail={obj.subDetail} key={i}/>
       );
@@ -38,11 +54,11 @@ class GuidePage extends Component {
           {scrollItems}
         </ScrollView>
         <PageControl number={objectNum} index={this.state.currentIndex} top={pageControlTop}/>
-        <TouchableOpacity onPress={() => {}} activeOpacity={50 / 100}>
-            { 
-              this.state.currentIndex == objectNum - 1 ? 
-              (<Text style={ styles.enterButton }>Enter</Text>): (null)
-            }
+        <TouchableOpacity onPress={() => {
+          Actions.RootPage({type: ActionConst.REPLACE});
+        }} 
+        activeOpacity={50 / 100}>
+        { this.state.currentIndex == objectNum - 1 ? (<Text style={ styles.enterButton }>Enter</Text>): (null) }
         </TouchableOpacity>
       </View>
     )
@@ -55,7 +71,7 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     flex: 1,
-    backgroundColor: 'white'
+    backgroundColor: 'skyblue'
   },
   enterButton: {
     position: 'absolute',
