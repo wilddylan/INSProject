@@ -55,7 +55,7 @@ class GuidePage extends Component {
         </ScrollView>
         <PageControl number={objectNum} index={this.state.currentIndex} top={pageControlTop}/>
         <TouchableOpacity onPress={() => {
-          Actions.RootPage({type: ActionConst.REPLACE});
+          Actions.main({type: ActionConst.REPLACE});
         }} 
         activeOpacity={50 / 100}>
         { this.state.currentIndex == objectNum - 1 ? (<Text style={ styles.enterButton }>Enter</Text>): (null) }
